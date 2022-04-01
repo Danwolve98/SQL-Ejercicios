@@ -5,7 +5,7 @@ CREATE function areaCirculo(radio DOUBLE) returns DOUBLE
 begin
 
 declare area DOUBLE;
-set area = (2*radio*Pi());
+set area = (power(radio,2)*Pi());
 return area;
 
 end $$
